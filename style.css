@@ -109,7 +109,7 @@ section {
 .social-icons a {
     color: #030414;
     font-size: 1.7em;
-    padding-right: 30x;
+    padding-right: 30px;
     margin: 10px;
 }
 
@@ -131,7 +131,8 @@ section {
 
 .card {
     background-color: white;
-    width: 21.25em;
+    width: 16em;
+    min-height: 14em;
     box-shadow: 0 5px 25px rgba(1, 1, 1, 15%);
     border-radius: 10px;
     padding: 25px;
@@ -177,10 +178,10 @@ section {
     background-color: white;
     border: 1px solid #fff;
     min-height: 14em;
-    width: 20em;
+    width: 16em;
     overflow: hidden;
     border-radius: 10px;
-    margin: 18px;
+    margin: 16px;
     transition: .75s ease;
 }
 
@@ -259,6 +260,124 @@ section {
     font-size: 1.3em;
 }
 
-@media {
-    max-width: 1023px;
+@media screen and (max-width: 768px) {
+    header {
+        padding: 10px 20px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navigation a {
+        font-size: 1em;
+        padding: 10px 0;
+    }
+
+    section {
+        padding: 50px 20px;
+    }
+
+    .main {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    .main h2 {
+        font-size: 1.2em;
+    }
+
+    .main h2 span {
+        font-size: 2em;
+    }
+
+    .main h3 {
+        font-size: 1.8em;
+    }
+
+    .main-btn {
+        font-size: 1em;
+    }
+
+    .social-icons {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .social-icons a {
+        font-size: 1.5em;
+        padding-right: 20px;
+    }
+
+    .title {
+        font-size: 1.8em;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+        padding: 0;
+        margin: 10px 0;
+    }
+
+    .icon {
+        font-size: 6em;
+    }
+
+    .info h3 {
+        font-size: 1em;
+    }
+
+    .projects.content {
+        margin-top: 20px;
+    }
+
+    .project_card {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .project_title {
+        font-size: 1.2em;
+    }
+
+    .contact .icon {
+        font-size: 3.5em;
+    }
+
+    .contact.info h3 {
+        font-size: 1.5em;
+    }
+
+    .contact.info p {
+        font-size: 1.5em;
+    }
+
+    .footer {
+        padding: 1em;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-title {
+        font-size: 1.2em;
+    }
+
+    .footer .social-icons {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .footer .social-icons a {
+        font-size: 1.2em;
+    }
+
 }
